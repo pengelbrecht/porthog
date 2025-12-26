@@ -1,6 +1,6 @@
 [project]
 name = "porthog"
-version = "0.1.0"
+version = "0.1.1"
 description = "CLI/TUI tool to find and kill dev servers hogging your ports"
 readme = "README.md"
 authors = [

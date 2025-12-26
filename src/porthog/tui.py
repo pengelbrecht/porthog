@@ -178,11 +178,11 @@ class PortHogApp(App[None]):
 
     BINDINGS = [
         Binding("q", "quit", "Quit"),
+        Binding("ctrl+c", "quit", "Quit", show=False),
         Binding("r", "refresh", "Refresh"),
         Binding("k", "kill", "Kill"),
         Binding("K", "kill_force", "Force Kill"),
-        Binding("a", "toggle_all", "Toggle All Ports"),
-        Binding("?", "help", "Help"),
+        Binding("a", "toggle_all", "All Ports"),
     ]
 
     TITLE = "porthog"
@@ -302,14 +302,6 @@ class PortHogApp(App[None]):
             ConfirmDialog(f"{action} this process?", port_info),
             handle_confirm,
         )
-
-    def action_help(self) -> None:
-        """Show help."""
-        status = self.query_one("#status-bar", StatusBar)
-        status.set_message(
-            "k: kill | K: force kill | r: refresh | a: toggle all | q: quit"
-        )
-
 
 def run_tui() -> None:
     """Run the TUI application."""

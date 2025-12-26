@@ -40,7 +40,7 @@ porthog
 - `K` - Force kill selected process
 - `r` - Refresh the list
 - `a` - Toggle between dev ports and all ports
-- `q` - Quit
+- `q` / `Ctrl+C` - Quit
 
 ### CLI Commands
 
