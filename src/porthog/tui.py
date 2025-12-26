@@ -196,7 +196,7 @@ class PortHogApp(App[None]):
     def compose(self) -> ComposeResult:
         yield Header()
         yield Container(
-            DataTable(id="ports-table"),
+            DataTable(id="ports-table", cursor_type="row"),
             StatusBar(id="status-bar"),
             id="main-container",
         )
