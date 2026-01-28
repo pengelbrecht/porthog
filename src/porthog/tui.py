@@ -76,8 +76,8 @@ class ConfirmDialog(ModalScreen[bool]):
                     id="confirm-details",
                 ),
                 Horizontal(
-                    Label("[y] Yes  ", classes="confirm-btn"),
-                    Label("[n] No", classes="confirm-btn"),
+                    Label("\\[y] Yes  ", classes="confirm-btn"),
+                    Label("\\[n] No", classes="confirm-btn"),
                     id="confirm-buttons",
                 ),
                 id="confirm-dialog",
